@@ -55,7 +55,7 @@ class _DiceRollerState extends State<DiceRoller> {
             width: 3,
           ),
         ),
-        splashColor: Color.fromARGB(255, 205, 54, 244),
+        splashColor: const Color.fromARGB(255, 205, 54, 244),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );

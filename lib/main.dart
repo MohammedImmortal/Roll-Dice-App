@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:roll_dice/rolldice.dart';
+import '../rolldice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: DiceRoller(),
+      home: const DiceRoller(),
     );
   }
 }
