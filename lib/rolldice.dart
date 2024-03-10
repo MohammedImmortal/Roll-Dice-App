@@ -20,9 +20,12 @@ class _DiceRollerState extends State<DiceRoller> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: const Text('Rolling Dice App'),
-        centerTitle: true,
+        title: const Text(
+          'Rolling Dice App',
+          style: TextStyle(
+            fontSize: 25,
+          ),
+        ),
       ),
       body: Container(
         alignment: Alignment.center,
@@ -38,21 +41,21 @@ class _DiceRollerState extends State<DiceRoller> {
         ),
         child: Image.asset(
           'images/dice-$activeDice.png',
-          width: 250,
+          width: 200,
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         label: const Text('Roll Dice'),
         onPressed: () => rollDice(),
-        backgroundColor: const Color.fromARGB(255, 205, 54, 244),
+        backgroundColor: Colors.teal,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(30)),
           side: BorderSide(
             color: Colors.black,
-            width: 5,
+            width: 3,
           ),
         ),
-        splashColor: Colors.teal,
+        splashColor: Color.fromARGB(255, 205, 54, 244),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
